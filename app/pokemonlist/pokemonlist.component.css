@@ -1,0 +1,110 @@
+.pokemon-grid{
+  display: grid;
+  grid-gap:16px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+  background: rgb(0,19,36);
+background: linear-gradient(180deg, rgba(0,19,36,1) 0%, rgba(9,18,121,1) 40%, rgba(0,174,255,1) 100%);
+}
+.pokemon-grid .box{
+  width: 100%;
+  height: 300px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  display: grid;
+  text-align: center;
+  background-color: aliceblue;
+}
+.pokemon-grid .box img{
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.box_searched{
+  right: -38%;
+  width: 23%;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-color: #32a83e;
+  padding: 2px;
+  position: relative;
+
+}
+.box_searched img{
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.pokemon-grid-searched{
+  width: 100%;
+  height: 300px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  display: grid;
+  text-align: center;
+  background-color: aliceblue;
+}
+pagination-controls{
+  text-align: center;
+  padding: 20px;
+}
+
+form{
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  width: max-content;
+
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+form.example button:hover {
+  background: #0b7dda;
+}
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#infotext{
+  background-color: #628ca0;
+  border-radius: 5px;
+  color: rgba(34, 34, 34, 0.829);
+  padding: 5px 4px 4px 4px;
+  position: relative;
+  box-shadow: 0px 1px 5px #999;
+  opacity: 0;
+  margin-left: 100px;
+  left: 10px;
+  position: relative;
+  transition: .5s ease;
+  z-index: 1;
+}
+#passinfo {
+  display: block;
+  height: 200px;
+}
+#passinfo:hover+#infotext{
+  opacity: 1;
+  visibility: visible;
+}
+img{
+  width: 250px;
+  height: 200px;
+}

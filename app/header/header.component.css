@@ -1,0 +1,13 @@
+header{
+  text-align: center;
+  padding: 20px 0px;
+  margin: 0;
+  background: rgb(0,19,36);
+  background: linear-gradient(180deg, rgba(0,19,36,1) 0%, rgba(139,159,250,1) 40%, rgba(0,174,255,1) 100%);
+
+}
+header h1{
+  text-transform: uppercase;
+  color: bisque;
+  letter-spacing: 2px;
+  }
